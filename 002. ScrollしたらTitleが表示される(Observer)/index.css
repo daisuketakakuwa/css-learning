@@ -1,0 +1,72 @@
+.container {
+  width: 98vw;
+  height: 100vh;
+  /* 中央寄せ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+.c1 {
+  background-color: black;
+  color: white;
+}
+.c2 {
+  background-color: blue;
+  color: white;
+}
+.c3 {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.letter {
+  opacity: 0;
+}
+
+.drop-letter {
+  /* アニメーション */
+  animation: 1.4s dropping-letter;
+  animation-fill-mode: forwards; /* 最後のフレームを保持する */
+}
+
+.letter1 {
+  animation-delay: calc(0.15s * 1);
+}
+.letter2 {
+  animation-delay: calc(0.15s * 2);
+}
+.letter3 {
+  animation-delay: calc(0.15s * 3);
+}
+.letter4 {
+  animation-delay: calc(0.15s * 4);
+}
+.letter5 {
+  animation-delay: calc(0.15s * 5);
+}
+.letter6 {
+  animation-delay: calc(0.15s * 6);
+}
+.letter7 {
+  animation-delay: calc(0.15s * 7);
+}
+.letter8 {
+  animation-delay: calc(0.15s * 8);
+}
+.letter9 {
+  animation-delay: calc(0.15s * 9);
+}
+
+@keyframes dropping-letter {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
