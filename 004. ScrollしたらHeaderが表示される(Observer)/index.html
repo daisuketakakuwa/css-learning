@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="position: relative;">
+        <div class="header-menu" style="opacity: 0; position: fixed; top: 0; width: 100%; height: 15vh; background-color: skyblue;"></div>
+        <div class="kv-area" style="width: 100%; height: 80vh;">
+        </div>
+        <div style="height: 1000px"></div>
+    </div>
+  </body>
+  <style>
+      .show-header {
+          opacity: 1 !important;
+          transform: translateY(0) !important;
+      }
+
+      /* ヌルっと出てくるようにしたい */
+      .header-menu {
+        transition: all 1s ease;
+        transform: translateY(-15vh);
+      }
+
+  </style>
+  <script src="index.js"></script>
+</html>
