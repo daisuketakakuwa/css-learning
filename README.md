@@ -1,8 +1,10 @@
-## 各ディレクトリ構成
-HTMLとCSSが入っているもの＝ローカルのブラウザで確認 or [JS Fiddle](https://jsfiddle.net/)で動作確認。
+### 各ディレクトリの中に入っているもの
+#### ①HTMLとCSSが入っているもの
 ```
 レシピ1/
 　・index.html
 　・index.css
 ```
-READMEが入っているもの = そのまま読んでください。
+`index.html`をローカルのブラウザで開くか、[JS Fiddle](https://jsfiddle.net/)で動作確認してください。
+
+#### ②READMEが入っているもの = そのまま読んでください。
