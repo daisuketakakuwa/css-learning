@@ -32,11 +32,13 @@
   background-size: cover;
   /* 「拡大」された場合の基準の位置 -> trimの基準位置 */
   background-position: center;
-
 ```
+![image](https://github.com/user-attachments/assets/ff18cdaa-32aa-4a35-826c-73be69ccf638)
+
 
 画像全体を表示させるが、トリムさせたくない場合
 ```css
   background-size: contain;
 ```
+![image](https://github.com/user-attachments/assets/66f99718-0a88-4c41-bcd0-f5a8ca913b59)
 
