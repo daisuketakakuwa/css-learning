@@ -1,0 +1,54 @@
+.rect {
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: orangered;
+  /* 子要素のbaseとなるために */  
+  position: relative;
+}
+
+/* absoluteは [static以外]の親要素を基準に位置を決定する。
+   The element is positioned relative to its closest positioned ANCESTOR.
+*/
+
+.c1 {
+  /* 親要素をbaseとするために */
+  position: absolute;
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  /* 親要素を基準にtop leftを指定する。 */
+  top: 10px;
+  left: 10px;
+}
+
+.c2 {
+  /* 親要素をbaseとするために */
+  position: absolute;
+  background-color: yellow;
+  width: 50px;
+  height: 50px;
+  /* 親要素を基準にtop leftを指定する。 */
+  top: 10px;
+  left: 60px;
+}
+
+.c3 {
+  /* 親要素をbaseとするために */
+  position: absolute;
+  background-color: purple;
+  width: 50px;
+  height: 50px;
+  /* 親要素を基準にtop leftを指定する。 */
+  top: 10px;
+  left: 110px;
+  
+}
+
+/* relative要素 は  */
+.relativeChild1 {
+  position: relative;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+}
