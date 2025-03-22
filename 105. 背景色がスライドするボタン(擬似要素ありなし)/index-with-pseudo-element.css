@@ -1,0 +1,52 @@
+#container {
+  text-align: center;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* 以下 slide-bgにButtonのアニメーションを適用していく
+   ---.--- で絞込 <要素>.<クラス名1>.<クラス名2>
+*/
+
+/* STEP1. Hoverしたら 出し入れするspanを定義する */
+.btn.slide-bg {
+  position: relative;
+  /* STEP5. はみ出した部分は見せないようにする */
+  overflow: hidden;
+  /* STEP6. 文字列"Button"が上に来るようにする */
+  z-index: 1;
+}
+.btn.slide-bg::before {
+  /* 擬似要素に必要な定義 content */
+  content: '';
+
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  /* SPEP2. デフォルトでは左側に出しておく */
+  transform: translateX(-100%);
+  /* STEP4. ゆっくり入ってくるようにする。 */
+  transition: transform 0.3s;
+  /* STEP6. 文字列"Button"が上に来るようにする */
+  z-index: -1;
+}
+
+/* STEP3. ButtonをHoverしたらspanが中に入ってくるようにする */
+.btn.slide-bg:hover::before {
+  transform: none;
+}
+
+.btn.slide-bg:hover {
+  color: white;
+}

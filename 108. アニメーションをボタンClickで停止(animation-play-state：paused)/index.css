@@ -1,0 +1,28 @@
+.rect {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 0 auto;
+  
+  animation: bouncedelay 1.4s infinite;
+}
+
+/* Animationを止める */
+.paused {
+  animation-play-state: paused;
+}
+
+@keyframes bouncedelay {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
