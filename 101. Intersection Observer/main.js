@@ -5,9 +5,10 @@ const cb = (entries, observer) => {
   entries.forEach((entry) => {
     // 画面内に入ってきた要素に対してCSSクラスを適用する
     if (entry.isIntersecting) {
-      console.log(entry.target);
+      console.log("intersect started");
       entry.target.classList.add("inview");
     } else {
+    	console.log("intersect ended");
       entry.target.classList.remove("inview");
     }
   });

@@ -1,0 +1,15 @@
+#container {
+  width: 80vw;
+  height: 500px;
+  border: 1px solid red;
+}
+
+.block-element {
+  /* margin: 0 auto は、インラインブロック要素には使えない。ブロック要素のみ。 */
+  /* １行を占めるブロック要素の横幅をmargin0 autoで中央寄せにする */
+  margin: 0 auto;
+
+  width: 200px;
+  text-align: center;
+  border: 2px solid blue;
+}

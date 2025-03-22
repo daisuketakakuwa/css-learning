@@ -1,0 +1,12 @@
+#container {
+  width: 80vw;
+  height: 500px;
+  border: 1px solid red;
+  /* ブロック要素内のインライン要素を、横軸で中央寄せ */
+  text-align: center;
+}
+
+.inline-block-c {
+  display: inline-block;
+  border: 2px solid blue;
+}
